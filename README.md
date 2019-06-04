@@ -11,7 +11,7 @@ npm i @it-era/ngx-safe-pipes
 
 And add the `NgxSafePipesModule` into the imports array of your module (containing the template to fix) :
 ```ts
-@import { NgxSafePipesModule } from '@it-era/ngx-safe-pipes';
+import { NgxSafePipesModule } from '@it-era/ngx-safe-pipes';
 
 // ...
 

@@ -1,14 +1,15 @@
 {
   "name": "@it-era/ngx-safe-pipes",
   "author": {
-    "name": "Quentin Petel",
+    "name": "Quentin Petel @ IT-era",
     "url": "https://quentinpetel.fr",
     "github": "https://github.com/QuentinPetel",
     "bitbucket": "https://bitbucket.org/QuentinPetel"
   },
+  "license": "MIT",
   "version": "0.0.2",
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": ">=7.0.0",
+    "@angular/core": ">=7.0.0"
   }
 }
