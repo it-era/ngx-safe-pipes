@@ -9,9 +9,8 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
  *
  * @usageNotes
  * ### Examples
- * @example <a [href]="trustedHref | safeUrl"></a>
+ * @example <a [attr.href]="trustedHref | safeUrl"></a>
  *
- * @publicApi
  */
 @Pipe({ name: 'safeUrl' })
 export class SafeUrlPipe implements PipeTransform {

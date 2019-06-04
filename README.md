@@ -37,28 +37,28 @@ Usage :
 
 Usage :
 ```HTML
-<iframe [src]="trustedSrc | safeResourceUrl"></iframe>
+<iframe [attr.src]="trustedSrc | safeResourceUrl"></iframe>
 ```
 
 ### SafeScript
 
 Usage :
 ```HTML
-<script [src]="trustedSrc | safeScript"></script>
+<script [attr.src]="trustedSrc | safeScript"></script>
 ```
 
 ### SafeStyle
 
 Usage :
 ```HTML
-<style [src]="trustedSrc | safeStyle"></style>
+<style [attr.src]="trustedSrc | safeStyle"></style>
 ```
 
 ### SafeUrl
 
 Usage :
 ```HTML
-<a [href]="trustedHref | safeUrl"></a>
+<a [attr.href]="trustedHref | safeUrl"></a>
 ```
 
 WARNING: calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
