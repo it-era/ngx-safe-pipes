@@ -2,12 +2,23 @@
   "name": "@it-era/ngx-safe-pipes",
   "author": {
     "name": "Quentin Petel @ IT-era",
+    "email": "contact@quentinpetel.fr",
     "url": "https://quentinpetel.fr",
     "github": "https://github.com/QuentinPetel",
     "bitbucket": "https://bitbucket.org/QuentinPetel"
   },
+  "contributors": [
+    {
+      "name": "Jeremy Pioche"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/it-era/ngx-safe-pipes.git"
+  },
+  "bugs": "https://github.com/it-era/ngx-safe-pipes/issues",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": ">=7.0.0",
     "@angular/core": ">=7.0.0",
