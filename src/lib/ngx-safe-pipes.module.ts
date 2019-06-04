@@ -1,5 +1,20 @@
 import { NgModule } from '@angular/core';
-import { PIPE_PROVIDERS } from './pipes';
+import { CommonModule } from '@angular/common';
+
+// import { PIPE_PROVIDERS } from '.';
+import { SafeHtmlPipe } from './pipes/safe.html';
+import { SafeResourceUrlPipe } from './pipes/safe.resource.url';
+import { SafeScriptPipe } from './pipes/safe.script';
+import { SafeStylePipe } from './pipes/safe.style';
+import { SafeUrlPipe } from './pipes/safe.url';
+
+const PIPE_PROVIDERS = [
+  SafeHtmlPipe,
+  SafeResourceUrlPipe,
+  SafeScriptPipe,
+  SafeStylePipe,
+  SafeUrlPipe,
+];
 
 
 /**
@@ -12,10 +27,11 @@ import { PIPE_PROVIDERS } from './pipes';
  * @publicApi
  */
 @NgModule({
+  imports: [
+    CommonModule,
+  ],
   declarations: [
     ...PIPE_PROVIDERS,
-  ],
-  imports: [
   ],
   exports: [
     ...PIPE_PROVIDERS,
