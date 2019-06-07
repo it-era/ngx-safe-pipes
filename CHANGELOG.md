@@ -10,13 +10,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2019-06-07
 ### Added
 - Add CHANGELOG.md
+- Update README.md to link to parent repository [IT-era/ngx](https://github.com/it-era/ngx)
 
 ### Changed
 
 ### Removed
 
 ## < 0.1.0
-Don't use those versions
+- Initial commits and builds. Don't use.
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/v0.1.0
+[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/0.1.0...HEAD
+[0.1.0]: https://github.com/olivierlacan/keep-a-changelog/releases/tag/0.1.0
