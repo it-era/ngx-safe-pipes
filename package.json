@@ -1,5 +1,6 @@
 {
   "name": "@it-era/ngx-safe-pipes",
+  "version": "0.1.1",
   "author": {
     "name": "Quentin Petel @ IT-era",
     "email": "contact@quentinpetel.fr",
@@ -18,7 +19,6 @@
   },
   "bugs": "https://github.com/it-era/ngx-safe-pipes/issues",
   "license": "MIT",
-  "version": "0.1.0",
   "peerDependencies": {
     "@angular/common": ">=7.0.0",
     "@angular/core": ">=7.0.0",
