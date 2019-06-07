@@ -1,4 +1,6 @@
-# NgxSafePipes
+[![GitHub](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes.svg)](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes)  [![npm](https://badge.fury.io/js/%40it-era%2Fngx-safe-pipes.svg)](https://badge.fury.io/js/%40it-era%2Fngx-safe-pipes)
+
+# IT-era / NgxSafePipes
 
 This library provide convenient pipes to bypass Angular built-in sanitization and get rid off the `unsafe value used in a ... context`.
 
