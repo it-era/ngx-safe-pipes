@@ -2,14 +2,18 @@
 
 This library provide convenient pipes to bypass Angular built-in sanitization and get rid off the `unsafe value used in a ... context`.
 
+This package is a part of the [IT-era/ngx](https://github.com/it-era/ngx) packages suite.
+
 ## Installation
 
-Install with npm :
+Get it on [npm](https://www.npmjs.com/package/@it-era/ngx-safe-pipes) :
+
 ```sh
 npm i @it-era/ngx-safe-pipes
 ```
 
 And add the `NgxSafePipesModule` into the imports array of your module (containing the template to fix) :
+
 ```ts
 import { NgxSafePipesModule } from '@it-era/ngx-safe-pipes';
 
@@ -29,6 +33,7 @@ export class YourModule { }
 ### SafeHtml
 
 Usage :
+
 ```HTML
 <div [InnerHTML]="trustedHtml | safeHtml"></div>
 ```
@@ -36,6 +41,7 @@ Usage :
 ### SafeResourceUrl
 
 Usage :
+
 ```HTML
 <iframe [attr.src]="trustedSrc | safeResourceUrl"></iframe>
 ```
@@ -43,6 +49,7 @@ Usage :
 ### SafeScript
 
 Usage :
+
 ```HTML
 <script [attr.src]="trustedSrc | safeScript"></script>
 ```
@@ -50,6 +57,7 @@ Usage :
 ### SafeStyle
 
 Usage :
+
 ```HTML
 <style [attr.src]="trustedSrc | safeStyle"></style>
 ```
@@ -57,8 +65,13 @@ Usage :
 ### SafeUrl
 
 Usage :
+
 ```HTML
 <a [attr.href]="trustedHref | safeUrl"></a>
 ```
 
 WARNING: calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
+
+## Changelog
+
+You can find it [here](https://github.com/it-era/ngx-safe-pipes/blob/master/CHANGELOG.md).
