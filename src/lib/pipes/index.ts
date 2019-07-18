@@ -18,4 +18,4 @@ export {
   SafeScriptPipe,
   SafeStylePipe,
   SafeUrlPipe,
-}
+};

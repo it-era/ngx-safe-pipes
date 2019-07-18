@@ -3,7 +3,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 /**
  * @ngModule NgxSafePipesModule
- * 
+ *
  * @description
  * Bypass the Angular built-in security check for an html content
  *
