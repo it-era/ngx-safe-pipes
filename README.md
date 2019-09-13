@@ -73,7 +73,7 @@ Usage :
 Usage :
 
 ```HTML
-<style [attr.src]="trustedStyle | safeStyle"></style>
+<div [attr.style]="trustedStyle | safeStyle"></div>
 ```
 
 ### Safe
@@ -81,7 +81,7 @@ Usage :
 Alternatively, you could use the generic SafePipe with the following syntax:
 ```HTML
  <div [innerHTML]="trustedHtml | safe: 'html'"></div>
- <style [attr.src]="trustedStyle | safe: 'style'"></style>
+ <div [attr.style]="trustedStyle | safe: 'style'"></div>
  <script [attr.src]="trustedScript | safe: 'script'"></script>
  <img [attr.src]="trustedUrl | safe: 'url'">
  <iframe [attr.src]="trustedResourceUrl | safe: 'resourceUrl'"></iframe>

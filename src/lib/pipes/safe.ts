@@ -11,11 +11,10 @@ import { DomSanitizer, SafeHtml, SafeStyle, SafeScript, SafeUrl, SafeResourceUrl
  * @usageNotes
  * ### Examples
  * @example <div [innerHTML]="trustedHtml | safe: 'html'"></div>
- * @example <style [attr.src]="trustedStyle | safe: 'style'"></style>
+ * @example <div [attr.style]="trustedStyle | safe: 'style'"></div>
  * @example <script [attr.src]="trustedScript | safe: 'script'"></script>
  * @example <img [attr.src]="trustedUrl | safe: 'url'">
  * @example <iframe [attr.src]="trustedResourceUrl | safe: 'resourceUrl'"></iframe>
- *
  */
 @Pipe({ name: 'safe' })
 export class SafePipe implements PipeTransform {
