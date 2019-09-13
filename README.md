@@ -32,6 +32,8 @@ export class YourModule { }
 
 ## List of pipes
 
+CAUTION: Calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
+
 ### SafeHtml
 
 Usage :
@@ -74,7 +76,16 @@ Usage :
 <style [attr.src]="trustedStyle | safeStyle"></style>
 ```
 
-CAUTION: Calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
+### Safe
+
+Alternatively, you could use the generic SafePipe with the following syntax:
+```HTML
+ <div [innerHTML]="trustedHtml | safe: 'html'"></div>
+ <style [attr.src]="trustedStyle | safe: 'style'"></style>
+ <script [attr.src]="trustedScript | safe: 'script'"></script>
+ <img [attr.src]="trustedUrl | safe: 'url'">
+ <iframe [attr.src]="trustedResourceUrl | safe: 'resourceUrl'"></iframe>
+```
 
 ## Changelog
 
