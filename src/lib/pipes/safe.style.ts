@@ -9,8 +9,7 @@ import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
  *
  * @usageNotes
  * ### Examples
- * @example <style [attr.src]="trustedSrc | safeStyle"></style>
- *
+ * @example <style [attr.src]="trustedStyle | safeStyle"></style>
  */
 @Pipe({ name: 'safeStyle' })
 export class SafeStylePipe implements PipeTransform {

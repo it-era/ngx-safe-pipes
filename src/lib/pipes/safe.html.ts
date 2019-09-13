@@ -9,8 +9,7 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
  *
  * @usageNotes
  * ### Examples
- * @example <div [InnerHTML]="trustedHtml | safeHtml"></div>
- *
+ * @example <div [innerHTML]="trustedHtml | safeHtml"></div>
  */
 @Pipe({ name: 'safeHtml' })
 export class SafeHtmlPipe implements PipeTransform {

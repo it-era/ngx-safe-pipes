@@ -9,8 +9,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
  *
  * @usageNotes
  * ### Examples
- * @example <iframe [attr.src]="trustedSrc | safeResourceUrl"></iframe>
- *
+ * @example <iframe [attr.src]="trustedResourceUrl | safeResourceUrl"></iframe>
  */
 @Pipe({ name: 'safeResourceUrl' })
 export class SafeResourceUrlPipe implements PipeTransform {

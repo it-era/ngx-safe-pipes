@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <!-- ### Changed -->
 
 <!-- ### Removed -->
+## [0.2.0] - 2019-09-13
+
+### Changed in [0.2.0]
+
+- Add SafePipe (usage => safe: 'html' | 'style' | 'script' | 'url' | 'resourceUrl')
 
 ## [0.1.3] - 2019-09-13
 

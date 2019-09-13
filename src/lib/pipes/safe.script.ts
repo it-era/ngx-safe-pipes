@@ -9,8 +9,7 @@ import { DomSanitizer, SafeScript } from '@angular/platform-browser';
  *
  * @usageNotes
  * ### Examples
- * @example <script [attr.src]="trustedSrc | safeScript"></script>
- *
+ * @example <script [attr.src]="trustedScript | safeScript"></script>
  */
 @Pipe({ name: 'safeScript' })
 export class SafeScriptPipe implements PipeTransform {
