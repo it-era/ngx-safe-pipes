@@ -45,7 +45,7 @@ Usage :
 Usage :
 
 ```HTML
-<iframe [attr.src]="trustedSrc | safeResourceUrl"></iframe>
+<iframe [attr.src]="trustedResourceUrl | safeResourceUrl"></iframe>
 ```
 
 ### SafeScript
@@ -53,7 +53,7 @@ Usage :
 Usage :
 
 ```HTML
-<script [attr.src]="trustedSrc | safeScript"></script>
+<script [attr.src]="trustedScript | safeScript"></script>
 ```
 
 ### SafeStyle
@@ -61,7 +61,7 @@ Usage :
 Usage :
 
 ```HTML
-<style [attr.src]="trustedSrc | safeStyle"></style>
+<style [attr.src]="trustedStyle | safeStyle"></style>
 ```
 
 ### SafeUrl
@@ -69,10 +69,11 @@ Usage :
 Usage :
 
 ```HTML
-<a [attr.href]="trustedHref | safeUrl"></a>
+<img [attr.src]="trustedUrl | safeUrl">
 ```
+NB: Usefull for base64 images.
 
-WARNING: calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
+CAUTION: Calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
 
 ## Changelog
 
