@@ -37,8 +37,18 @@ export class YourModule { }
 Usage :
 
 ```HTML
-<div [InnerHTML]="trustedHtml | safeHtml"></div>
+<div [innerHTML]="trustedHtml | safeHtml"></div>
 ```
+
+### SafeUrl
+
+Usage :
+
+```HTML
+<img [attr.src]="trustedUrl | safeUrl">
+```
+
+NB: Usefull also for base64 images.
 
 ### SafeResourceUrl
 
@@ -63,15 +73,6 @@ Usage :
 ```HTML
 <style [attr.src]="trustedStyle | safeStyle"></style>
 ```
-
-### SafeUrl
-
-Usage :
-
-```HTML
-<img [attr.src]="trustedUrl | safeUrl">
-```
-NB: Usefull for base64 images.
 
 CAUTION: Calling thoses methods with untrusted user data exposes your application to [XSS security risks](https://angular.io/guide/security#xss)!
 
