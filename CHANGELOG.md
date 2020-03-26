@@ -15,6 +15,13 @@ This section contains upcoming changes not yet in a version
 
 <!-- ### Removed -->
 
+## [0.2.1] - 2019-09-13
+
+### Changed in [0.2.1]
+
+- Update README.md
+- Update CHANGELOG.md
+
 ## [0.2.0] - 2019-09-13
 
 ### Changed in [0.2.0]
@@ -53,7 +60,8 @@ This section contains upcoming changes not yet in a version
 
 - Initial commits and builds. Don't use.
 
-[Unreleased]: https://github.com/it-era/ngx-safe-pipes/compare/0.2.0...HEAD
+[unreleased]: https://github.com/it-era/ngx-safe-pipes/compare/0.2.1...HEAD
+[0.2.1]: https://github.com/it-era/ngx-safe-pipes/compare/0.2.0...0.2.1
 [0.2.0]: https://github.com/it-era/ngx-safe-pipes/compare/0.1.3...0.2.0
 [0.1.3]: https://github.com/it-era/ngx-safe-pipes/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/it-era/ngx-safe-pipes/compare/0.1.1...0.1.2

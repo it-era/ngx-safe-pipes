@@ -4,30 +4,30 @@ This library provide convenient pipes to bypass Angular built-in sanitization an
 
 This package is a part of the [IT-era/ngx](https://github.com/it-era/ngx) packages suite.
 
-[![GitHub](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes.svg)](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes)  [![npm](https://badge.fury.io/js/%40it-era%2Fngx-safe-pipes.svg)](https://badge.fury.io/js/%40it-era%2Fngx-safe-pipes)
+[![GitHub](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes.svg)](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes) [![npm](https://badge.fury.io/js/%40it-era%2Fngx-safe-pipes.svg)](https://www.npmjs.com/package/@it-era/ngx-safe-pipes)
 
 ## Installation
 
-Get it on [npm](https://www.npmjs.com/package/@it-era/ngx-safe-pipes) :
+[![npm](https://nodei.co/npm/@it-era/ngx-safe-pipes.png?mini=true)](https://www.npmjs.com/package/@it-era/ngx-safe-pipes)
+
+This package is available through the [npm registry](https://www.npmjs.com/package/@it-era/ngx-safe-pipes) :
 
 ```sh
 npm i @it-era/ngx-safe-pipes
 ```
 
-And add the `NgxSafePipesModule` into the imports array of your module (containing the template to fix) :
+Then add the `NgxSafePipesModule` into the imports array of your module (containing the template to fix) :
 
 ```ts
-import { NgxSafePipesModule } from '@it-era/ngx-safe-pipes';
-
-// ...
+import { NgxSafePipesModule } from "@it-era/ngx-safe-pipes";
 
 @NgModule({
-    imports: [
-        NgxSafePipesModule,
-        // ...
-    ]
+  imports: [
+    NgxSafePipesModule
+    // ...
+  ]
 })
-export class YourModule { }
+export class YourModule {}
 ```
 
 ## List of pipes
@@ -79,6 +79,7 @@ Usage :
 ### Safe
 
 Alternatively, you could use the generic SafePipe with the following syntax:
+
 ```HTML
  <div [innerHTML]="trustedHtml | safe: 'html'"></div>
  <div [attr.style]="trustedStyle | safe: 'style'"></div>
