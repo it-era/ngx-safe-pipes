@@ -4,7 +4,9 @@ This library provide convenient pipes to bypass Angular built-in sanitization an
 
 This package is a part of the [IT-era/ngx](https://github.com/it-era/ngx) packages suite.
 
-[![GitHub](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes.svg)](https://badge.fury.io/gh/it-era%2Fngx-safe-pipes) [![npm](https://badge.fury.io/js/%40it-era%2Fngx-safe-pipes.svg)](https://www.npmjs.com/package/@it-era/ngx-safe-pipes)
+[![GitHub](https://badgen.net/github/tag/it-era/ngx-safe-pipes)](https://github.com/it-era/ngx-safe-pipes)
+[![Npm](https://badgen.net/npm/v/@it-era%2Fngx-safe-pipes)](https://www.npmjs.com/package/@it-era/ngx-safe-pipes)
+[![Bundle size](https://badgen.net/bundlephobia/minzip/@it-era/ngx-safe-pipes)](https://bundlephobia.com/result?p=@it-era/ngx-safe-pipes)
 
 ## Installation
 
@@ -19,13 +21,13 @@ npm i @it-era/ngx-safe-pipes
 Then add the `NgxSafePipesModule` into the imports array of your module (containing the template to fix) :
 
 ```ts
-import { NgxSafePipesModule } from "@it-era/ngx-safe-pipes";
+import { NgxSafePipesModule } from '@it-era/ngx-safe-pipes'
 
 @NgModule({
   imports: [
-    NgxSafePipesModule
+    NgxSafePipesModule,
     // ...
-  ]
+  ],
 })
 export class YourModule {}
 ```
