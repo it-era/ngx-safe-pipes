@@ -15,6 +15,18 @@ This section contains upcoming changes not yet in a version
 
 <!-- ### Removed -->
 
+## [0.3.1] - 2021-11-10
+
+### Changed in [0.3.1]
+
+- Fix previously bad publication to npm registry.
+
+## [0.3.0] - 2021-11-10
+
+### Changed in [0.3.0]
+
+- Update angular stack in root project to version 13
+
 ## [0.2.1] - 2020-03-27
 
 ### Changed in [0.2.1]
